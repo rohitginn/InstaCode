@@ -70,5 +70,3 @@ User passwords are hashed using bcrypt for maximum security.
 ```bash
 git clone https://github.com/rohitginn/InstaCode.git
 cd InstaCode
-
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c3f27a4a-072c-4394-990d-b191e275f546" />
