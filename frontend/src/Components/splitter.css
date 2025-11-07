@@ -1,0 +1,29 @@
+/* LeetCode-style vertical splitter bar */
+.gutter-horizontal {
+  background: #181818;        /* dark, matches LeetCode */
+  width: 8px;                /* same width as LeetCode's splitter */
+  border-radius: 4px;        /* slightly rounded for a modem feel */
+  position: relative;
+  cursor: ew-resize;
+  margin: 0;
+  padding: 0;
+}
+
+/* On hover, slightly lighter grey */
+.gutter-horizontal:hover {
+  background: #222;
+}
+
+/* Inner pill-like highlight (center bar) */
+.gutter-horizontal::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4px;              /* LeetCode's pill is about half the width of the gutter */
+  height: 70%;
+  background: #232323;
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+}
